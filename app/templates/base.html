@@ -1,0 +1,18 @@
+<html>
+    <head>
+      {% if title %}
+      <title>MLS Tracker {{ title }}</title>
+      {% else %}
+      <title>MLS Tracker</title>
+      {% endif %}
+    </head>
+    <body>
+      <nav>
+        <a href="/index">MLS Tracker Home</a>
+      </nav>
+      <main>
+        {% block content %}
+        {% endblock %}
+      </main>
+    </body>
+</html>

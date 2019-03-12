@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ team.fullname }} Record Tracker</h1>
+{% if seasons %}
+<ul>
+  {% for season in seasons %}
+  <li>{{ season.year }} - {{season.competition.fullname}}</li>
+  {% endfor %}
+</ul>
+{% endif %}
+{% endblock %}
